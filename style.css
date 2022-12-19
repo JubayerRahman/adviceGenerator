@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.adviceSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    justify-content: space-evenly;
+    background-color: hsl(217, 19%, 24%);
+    color: hsl(193, 38%, 86%);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+}
+.adviceId{
+    color: hsl(150, 100%, 66%);
+}
+.advice{
+    text-align: center;
+    font-size: 28px;
+    width: 30vw;
+}
+.Divider{
+    margin-bottom: 40px;
+}
+.DividerMob{
+    display: none;
+}
+
+#button{
+    margin-top:-3%;
+    background-color: hsl(150, 100%, 66%);
+    padding: 20px;
+    border: none;
+    border-radius: 100px;
+}
+#button:hover{
+    box-shadow: 2px 2px 20px hsl(150, 100%, 66%);
+}
+
+.animation{
+    animation: transBlar 2s forwards;
+}
+footer{
+    margin-top: 50px;
+    color: hsl(193, 38%, 86%);
+}
+footer a{
+    text-decoration: none;
+    color: hsl(150, 100%, 66%);
+}
+
+@keyframes transBlar {
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@media (max-width:768px) {
+    .adviceSection{
+        width: 80vw;
+        height: fit-content;
+    }
+    .Divider{
+        display: none;
+    }
+    .DividerMob{
+        display: block;
+        width: 60vw;
+        margin-bottom: 30px;
+    }
+    .advice{
+        width: 60vw;
+    }
+    #button{
+        margin-top: -30px;
+    }
+}
