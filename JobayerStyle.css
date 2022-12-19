@@ -45,7 +45,17 @@ h1{
 }
 
 @media (max-width:768px) {
+    .pSection{
+        padding: 15px;
+    }
     .programmer{
         width: 60vw;
+        border-radius: 30px;
+    }
+    .devider{
+        width: 60vw;
+    }
+    h1{
+        font-size: 18px;
     }
 }
