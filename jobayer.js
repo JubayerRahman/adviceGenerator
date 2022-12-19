@@ -11,7 +11,5 @@ window.addEventListener("DOMContentLoaded",()=>{
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x#52ffa8,
-        backgroundColor: 0x#1f2632
             })
     })
