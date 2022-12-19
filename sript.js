@@ -4,6 +4,7 @@ const adviceId = document.getElementById('adviceId')
 const button = document.getElementById('button');
 
 button.addEventListener('click', async ()=>{
+    try{
     adviceSection.classList.remove('animation');
     const url ="https://api.adviceslip.com/advice";
     const data = await fetch (url);
@@ -11,4 +12,8 @@ button.addEventListener('click', async ()=>{
     adviceId.innerHTML = res.slip.id;
     advice.innerHTML = res.slip.advice;
     adviceSection.classList.add('animation');
+}
+catch{
+    console.log("Sorry")
+}
 })
